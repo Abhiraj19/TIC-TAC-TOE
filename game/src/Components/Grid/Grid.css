@@ -1,0 +1,10 @@
+.grid{
+    height:500px;
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.highLight{
+    color:white
+}
