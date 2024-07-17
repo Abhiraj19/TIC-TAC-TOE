@@ -36,15 +36,7 @@
     "eslint": "^9.7.0",
     "eslint-plugin-react": "^7.34.4",
     "globals": "^15.8.0"
-  },
-
-  "eslintConfig": {
-    "rules": {
-      "react/prop-types": "off"
-    },
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   }
+
+ 
 }

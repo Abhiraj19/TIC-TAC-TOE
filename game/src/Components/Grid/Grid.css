@@ -1,4 +1,6 @@
-.grid{
+/* .grid{
+
+    margin: auto;
     height:500px;
     width:500px;
     display: flex;
@@ -7,4 +9,96 @@
 }
 .highLight{
     color:white
+}
+.winner-high{
+    color:white;
+
+} */
+
+
+/* Grid.css */
+
+/* Base styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 1px solid #000;
+}
+.highLight {
+    color: white;
+}
+
+.winner-high{
+    text-align: center;
+    color:white
+
+}
+
+/* Media queries for responsiveness */
+
+/* For small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 300px;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    .winner-high, .highlight {
+        font-size: 1.2rem;
+    }
+}
+
+/* For medium devices (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 350px;
+    }
+
+    .card {
+        width: 90px;
+        height: 90px;
+        font-size: 1.75rem;
+    }
+
+    .winner-high, .highlight {
+        font-size: 1.5rem;
+        
+    }
+}
+
+/* For large devices (laptops/desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 400px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+    }
+
+    .winner-high, .highlight {
+        font-size: 1.75rem;
+    }
 }
